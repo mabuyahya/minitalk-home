@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_recursive_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabuyahy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mabuyahy <mabuyahy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/02 17:03:14 by mabuyahy          #+#    #+#             */
-/*   Updated: 2024/09/03 09:51:18 by mabuyahy         ###   ########.fr       */
+/*   Created: 2024/12/11 17:37:47 by mabuyahy          #+#    #+#             */
+/*   Updated: 2024/12/12 09:07:23 by mabuyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	l;
 
-	l = 0;
-	while (s[l] != 0)
-		l++;
-	return (l);
+
+
+
+
+
+int	ft_recursive_power(int nb, int power)
+{
+	if (power < 0)
+		return (0);
+	else if (power == 0 && power == 0)
+		return (1);
+	else
+		return (nb * ft_recursive_power(nb, power - 1));
 }

@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   ft_calloc_exit.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabuyahy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/09 17:58:24 by mabuyahy          #+#    #+#             */
-/*   Updated: 2024/12/09 18:04:36 by mabuyahy         ###   ########.fr       */
+/*   Created: 2024/12/11 10:41:56 by mabuyahy          #+#    #+#             */
+/*   Updated: 2024/12/11 10:42:39 by mabuyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/minitalk.h"
+#include "libft.h"
 
-int main(int argc, char *argv[])
+void	*ft_calloc_exit(size_t count, size_t size)
 {
-	ft_printf("%d\n",getpid());
+	size_t	total_size;
+	void	*ret;
 
-
+	total_size = size * count;
+	ret = malloc(total_size);
+	if (!ret)
+		exit(1);
+	ft_bzero(ret, total_size);
+	return (ret);
 }

@@ -6,7 +6,7 @@
 /*   By: mabuyahy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 16:37:08 by mabuyahy          #+#    #+#             */
-/*   Updated: 2024/09/07 10:34:30 by mabuyahy         ###   ########.fr       */
+/*   Updated: 2024/12/11 10:43:11 by mabuyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *str, const char *find, size_t len);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *str);
+int     	ft_recursive_power(int nb, int power);
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -72,4 +73,5 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+void    *ft_calloc_exit(size_t count, size_t size);
 #endif

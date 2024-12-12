@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabuyahy <mabuyahy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/11 09:13:24 by mabuyahy          #+#    #+#             */
-/*   Updated: 2024/12/11 19:08:23 by mabuyahy         ###   ########.fr       */
+/*   Created: 2024/09/02 17:03:14 by mabuyahy          #+#    #+#             */
+/*   Updated: 2024/12/11 19:26:03 by mabuyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
-
-#ifndef WAIT_TIME
-# define WAIT_TIME 100
-#endif
-
-#include <signal.h>
 #include "libft.h"
-#include "ft_printf.h"
 
-#endif
+
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	l;
+
+	l = 0;
+	while (s[l] != 0)
+		l++;
+	return (l);
+}

@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabuyahy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mabuyahy <mabuyahy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 10:43:22 by mabuyahy          #+#    #+#             */
-/*   Updated: 2024/08/29 14:22:08 by mabuyahy         ###   ########.fr       */
+/*   Updated: 2024/12/11 20:50:47 by mabuyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+
+
+
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
