@@ -6,19 +6,19 @@
 /*   By: mabuyahy <mabuyahy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 09:13:24 by mabuyahy          #+#    #+#             */
-/*   Updated: 2024/12/12 10:42:40 by mabuyahy         ###   ########.fr       */
+/*   Updated: 2024/12/12 12:33:54 by mabuyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MINITALK_H
 # define MINITALK_H
 
-#ifndef WAIT_TIME
-# define WAIT_TIME 100
-#endif
+# ifndef WAIT_TIME
+#  define WAIT_TIME 400
+# endif
 
-#include <signal.h>
-#include "libft.h"
-#include "ft_printf.h"
+# include <signal.h>
+# include "libft.h"
+# include "ft_printf.h"
 
 #endif
